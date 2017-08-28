@@ -15,13 +15,31 @@ nav, footer {
 }
 
 .shadow {
-  text-shadow: 1px 1px 1px 1px grey;
+  color: white;
+  text-shadow: 1px 1px black;
+}
+
+.reverse-shadow {
+  color: black;
+  text-shadow: .5px .5px grey;
 }
 
 input {
   margin: 2.5% 0;
 }
 
+button {
+  box-shadow: 1px 1px black;
+  outline: none;
+  cursor: pointer;
+}
+
 .message {
-  margin-top: 2.5%;
+  margin-top: 5%;
+}
+
+p {
+  font-family: cursive;
+  font-size: 1.25rem;
+  font-weight: bold;
 }

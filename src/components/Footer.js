@@ -4,7 +4,7 @@ class Footer extends Component {
   render() {
     return (
       <footer className="bg-success">
-        <h5>Message should print above!</h5>
+        <h5 className="shadow">Message should print above!</h5>
       </footer>
     );
   }
