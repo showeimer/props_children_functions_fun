@@ -22,7 +22,7 @@ class ParentComponent extends Component {
   handleInput(e) {
     e.preventDefault();
     //set the state on input change
-    this.setState({whatToSay: this.state.whatToSay});
+    this.setState({whatToSay: e.target.value});
   }
 
   handleSubmit(e) {
@@ -38,14 +38,12 @@ class ParentComponent extends Component {
   render() {
 
     return (
-      <div>Smart Component: I have a function, but something isn't working? I also need to pass that function to the ChildComponent.
-        <div>
-          <input onChange={this.handleInput} type="text" placeholder="Say It, Don't Spray It!" />
-        </div>
-        <div>
+      <div className="bg-warning parentComponent">
+
+          <input className="form-control" onChange={this.handleInput} type="text" placeholder="Say It, Don't Spray It!" value={this.state.whatToSay} />
+
           <ChildComponent onClick={this.handleSubmit} />
           <DisplayComponent sayWhat={this.state.whatWasSaid} />
-        </div>
       </div>
     );
   }

@@ -8,9 +8,7 @@ class ChildComponent extends Component {
   render() {
     return (
       <div>
-        <div>
-          <input type="submit" onClick={this.props.onClick}/>
-        </div>
+          <button className="btn bg-danger" type="submit" onClick={this.props.onClick}>Submit</button>
       </div>
     );
   }

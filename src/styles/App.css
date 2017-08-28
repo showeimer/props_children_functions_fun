@@ -1,24 +1,27 @@
-.App {
-  text-align: center;
+#root {
+  margin: 0 25%;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+nav, footer {
+  padding: 2.5% 3%;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.parentComponent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5% 2.5%;
 }
 
-.App-intro {
-  font-size: large;
+.shadow {
+  text-shadow: 1px 1px 1px 1px grey;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+input {
+  margin: 2.5% 0;
+}
+
+.message {
+  margin-top: 2.5%;
 }
